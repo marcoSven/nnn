@@ -134,27 +134,27 @@
  * Color names: https://www.ditig.com/256-colors-cheat-sheet
  */
 #define COLOR_LIST \
-	COLOR_X(COLOR_VIDEO,         45)  /* Turquoise2 */ \
-	COLOR_X(COLOR_VIDEO1,       226)  /* Yellow1 */ \
-	COLOR_X(COLOR_AUDIO,        220)  /* Gold1 */ \
-	COLOR_X(COLOR_AUDIO1,       205)  /* HotPink */ \
-	COLOR_X(COLOR_IMAGE,         82)  /* Chartreuse2 */ \
-	COLOR_X(COLOR_DOCS,         202)  /* OrangeRed1 */ \
-	COLOR_X(COLOR_ARCHIVE,      209)  /* Salmon1 */ \
-	COLOR_X(COLOR_C,             81)  /* SteelBlue1 */ \
-	COLOR_X(COLOR_JAVA,          32)  /* DeepSkyBlue3 */ \
-	COLOR_X(COLOR_JAVASCRIPT,    47)  /* SpringGreen2 */ \
-	COLOR_X(COLOR_REACT,         39)  /* DeepSkyBlue1 */ \
-	COLOR_X(COLOR_CSS,          199)  /* DeepPink1 */ \
-	COLOR_X(COLOR_PYTHON,       227)  /* LightGoldenrod1 */ \
-	COLOR_X(COLOR_LUA,           19)  /* Blue3 */ \
-	COLOR_X(COLOR_DOCUMENT,      15)  /* White */ \
-	COLOR_X(COLOR_FSHARP,        31)  /* DeepSkyBlue3 */ \
-	COLOR_X(COLOR_RUBY,         160)  /* Red3 */ \
-	COLOR_X(COLOR_SCALA,        196)  /* Red1 */ \
-	COLOR_X(COLOR_SHELL,         47)  /* SpringGreen2 */ \
-	COLOR_X(COLOR_VIM,           28)  /* Green4 */ \
-	COLOR_X(COLOR_ELIXIR,       104)  /* MediumPurple */ \
+	COLOR_X(COLOR_VIDEO,         0)  /* Turquoise2 */ \
+	COLOR_X(COLOR_VIDEO1,       0)  /* Yellow1 */ \
+	COLOR_X(COLOR_AUDIO,        0)  /* Gold1 */ \
+	COLOR_X(COLOR_AUDIO1,       0)  /* HotPink */ \
+	COLOR_X(COLOR_IMAGE,         0)  /* Chartreuse2 */ \
+	COLOR_X(COLOR_DOCS,         0)  /* OrangeRed1 */ \
+	COLOR_X(COLOR_ARCHIVE,      0)  /* Salmon1 */ \
+	COLOR_X(COLOR_C,             0)  /* SteelBlue1 */ \
+	COLOR_X(COLOR_JAVA,          0)  /* DeepSkyBlue3 */ \
+	COLOR_X(COLOR_JAVASCRIPT,    0)  /* SpringGreen2 */ \
+	COLOR_X(COLOR_REACT,         0)  /* DeepSkyBlue1 */ \
+	COLOR_X(COLOR_CSS,          0)  /* DeepPink1 */ \
+	COLOR_X(COLOR_PYTHON,       0)  /* LightGoldenrod1 */ \
+	COLOR_X(COLOR_LUA,           0)  /* Blue3 */ \
+	COLOR_X(COLOR_DOCUMENT,      0)  /* White */ \
+	COLOR_X(COLOR_FSHARP,        0)  /* DeepSkyBlue3 */ \
+	COLOR_X(COLOR_RUBY,         0)  /* Red3 */ \
+	COLOR_X(COLOR_SCALA,        0)  /* Red1 */ \
+	COLOR_X(COLOR_SHELL,         0)  /* SpringGreen2 */ \
+	COLOR_X(COLOR_VIM,           0)  /* Green4 */ \
+	COLOR_X(COLOR_ELIXIR,       0)  /* MediumPurple */ \
 
 /* X-Macro: https://en.wikipedia.org/wiki/X_Macro */
 #define COLOR_X(N, V) N = (V),
@@ -180,17 +180,21 @@ static const struct icon exec_icon = {ICON_EXEC, 0};
 
 static const struct icon_pair icons_name[] = {
 	{".git",        ICON_GIT,       0},
+	{".config",     "", 0},
+	{".vscode",     "󰨞", 0},
+	{".trash",      "", 0 },
 	{"Desktop",     ICON_DESKTOP,   0},
 	{"Documents",   ICON_BRIEFCASE, 0},
 	{"Downloads",   ICON_DOWNLOADS, 0},
+    {"Developer",   "", 0},
 	{"Music",       ICON_MUSIC,     0},
 	{"Pictures",    ICON_PICTURES,  0},
 	{"Public",      ICON_PUBLIC,    0},
 	{"Templates",   ICON_TEMPLATES, 0},
 	{"Videos",      ICON_VIDEOS,    0},
-	{"CHANGELOG",   ICON_CHANGELOG, COLOR_DOCS},
+	{"CHANGELOG",   ICON_CHANGELOG, 0},
 	{"configure",   ICON_CONFIGURE, 0},
-	{"License",     ICON_LICENSE,   COLOR_DOCS},
+	{"License",     ICON_LICENSE,   0},
 	{"Makefile",    ICON_MAKEFILE,  0},
 };
 

@@ -17,9 +17,9 @@ index 83ecdb90..4397944a 100644
 +#ifdef NERD
 +#define GIT_ADD ""
 +#define GIT_DEL ""
-+#define GIT_IGN ""
-+#define GIT_MOD ""
-+#define GIT_NEW ""
++#define GIT_IGN "!"
++#define GIT_MOD ""
++#define GIT_NEW ""
 +#define GIT_NON "-"
 +#define GIT_UPD "ﮮ"
 +#else

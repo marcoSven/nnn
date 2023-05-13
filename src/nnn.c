@@ -5092,7 +5092,7 @@ static void show_help(const char *path)
 		  "cc  Connect remote%-10cu  Unmount remote/archive\n"
 	       "9t ^T  Sort toggles%-12cs  Manage session\n"
 		  "cT  Set time type%-11c0  Lock\n"
-		 "b^L  Redraw%-18c?  Help, conf\n"
+		 "b^K  Redraw%-18c?  Help, conf\n"
 	};
 
 	int fd = create_tmp_file();
